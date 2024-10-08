@@ -25,8 +25,14 @@ const add = function (a, b) {
 //Arrow Functions - ES6
 const division = (a, b) => a / b;
 
+//Anonymous Functions
+product(function () {
+  console.log("In Anonymous function....");
+  return 20;
+}, 30);
+
 printName();
 printActressName("Trisha");
-console.log(product(3, 7));
-console.log(add(3, 7));
-console.log(division(9, 3));
+console.log("Product: " + product(3, 7));
+console.log("Add: " + add(3, 7));
+console.log("Division: " + division(9, 3));
