@@ -36,6 +36,13 @@ product(function () {
   console.log("IIFE Function.....");
 })();
 
+//Higher Order Function
+function processNumber(numbers, operation) {
+  return numbers.map(operation);
+}
+const result = processNumber([1, 2, 3], (num) => num * num);
+console.log(result);
+
 printName();
 printActressName("Trisha");
 console.log("Product: " + product(3, 7));
