@@ -15,6 +15,12 @@ function product(a, b) {
   return a * b;
 }
 
+//Function Expression - ES6
+const add = function (a, b) {
+  return a + b;
+};
+
 printName();
 printActressName("Trisha");
 console.log(product(3, 7));
+console.log(add(3, 7));
