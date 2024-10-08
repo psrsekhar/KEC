@@ -13,6 +13,15 @@ function declare() {
   actorName = "Karthi"; // can be reassigned
   console.log(actorName);
   var actorName = "Samantha"; //can be re declared in same scope
+
+  //difference between let and var in terms of scope
+  if (true) {
+    let isStudent = true;
+    var isCollege = true;
+    console.log(isStudent);
+  }
+
+  console.log(isCollege);
 }
 
 function print() {
