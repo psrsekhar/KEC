@@ -1,3 +1,13 @@
-console.log("Welcome to javascript!"); //for developers
-alert("About to execute javascript code...."); //for alerting warning messages
-console.log(prompt("enter your name: ")); //for dynamic user input
+function declare() {
+  let collegeName = "KEC"; //'KEC'
+  collegeName = "Kongu Engineering College"; //can be reassigned
+  console.log(collegeName);
+  //let collegeName = "KEC"; can not re declared in same scope
+}
+
+function printCollegeName() {
+  //console.log("in print() : " + collegeName); out of scope. will get an error.
+}
+
+declare();
+printCollegeName();
