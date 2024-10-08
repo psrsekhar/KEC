@@ -60,6 +60,19 @@ function generateSquareArray(input) {
 }
 console.log(generateSquareArray([3, 6, 8, 9]));
 
+//function to return a function (First-class Functions)
+function tokenGenerator() {
+  let count = 0;
+  return function () {
+    count++;
+    return count;
+  };
+}
+let counter = tokenGenerator();
+console.log("Token: " + counter());
+console.log("Token: " + counter());
+console.log("Token: " + counter());
+
 printName();
 printActressName("Trisha");
 console.log("Product: " + product(3, 7));
