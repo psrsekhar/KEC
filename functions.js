@@ -31,6 +31,11 @@ product(function () {
   return 20;
 }, 30);
 
+//IIFE - Immediately Invoked Function Expression
+(function () {
+  console.log("IIFE Function.....");
+})();
+
 printName();
 printActressName("Trisha");
 console.log("Product: " + product(3, 7));
