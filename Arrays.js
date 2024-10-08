@@ -19,3 +19,18 @@ console.log(actorNames.shift()); // remove and return first element
 for (let name of actorNames) {
   console.log("Name: " + name);
 }
+
+//merging two arrays
+//actorNames.push(actressNames);
+//console.log(actorNames);
+
+actorNames.push(...actressNames);
+console.log("Spread: " + actorNames);
+
+let actors = actressNames.concat(actorNames);
+console.log(actors);
+
+for (let name of actorNames) {
+  actressNames.push(name);
+}
+console.log(actressNames);
