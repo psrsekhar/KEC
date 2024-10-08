@@ -20,6 +20,13 @@ let studentSkill = {
   c: true,
   java: true,
 };
-
 let student = { ...firstStudent, ...studentSkill };
 console.log(student);
+
+//spread operator as function parameters
+function totalMarks(a, b, c) {
+  return a + b + c;
+}
+
+let marks = [78, 75, 76];
+totalMarks(...marks);
