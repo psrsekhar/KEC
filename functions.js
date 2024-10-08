@@ -54,6 +54,12 @@ function generateObject(studentId, studentName, studentDepartment) {
 let student = generateObject(1, "Abc Def", "CSD");
 console.log(student);
 
+//function to return a array
+function generateSquareArray(input) {
+  return input.map((x) => x * x);
+}
+console.log(generateSquareArray([3, 6, 8, 9]));
+
 printName();
 printActressName("Trisha");
 console.log("Product: " + product(3, 7));
