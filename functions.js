@@ -43,6 +43,17 @@ function processNumber(numbers, operation) {
 const result = processNumber([1, 2, 3], (num) => num * num);
 console.log(result);
 
+//function to return a object
+function generateObject(studentId, studentName, studentDepartment) {
+  return {
+    id: studentId,
+    name: studentName,
+    department: studentDepartment,
+  };
+}
+let student = generateObject(1, "Abc Def", "CSD");
+console.log(student);
+
 printName();
 printActressName("Trisha");
 console.log("Product: " + product(3, 7));
