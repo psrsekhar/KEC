@@ -20,8 +20,15 @@ function declare() {
     var isCollege = true;
     console.log(isStudent);
   }
-
   console.log(isCollege);
+
+  let address = null; //null variable or type
+  console.log("Address: " + address);
+
+  let phoneNumber; //undefined variable or type
+  console.log("Phone: " + phoneNumber);
+
+  let student;
 }
 
 function print() {
