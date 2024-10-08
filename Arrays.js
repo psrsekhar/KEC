@@ -21,8 +21,8 @@ for (let name of actorNames) {
 }
 
 //merging two arrays
-//actorNames.push(actressNames);
-//console.log(actorNames);
+actorNames.push(actressNames);
+console.log(actorNames);
 
 actorNames.push(...actressNames);
 console.log("Spread: " + actorNames);
