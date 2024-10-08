@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>KEC</title>
+
+    <!-- External CSS styles -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="template-bg-color">
+      <h2 class="color-white">Kongu Engineering College</h2>
+    </header>
+    <main>
+      <h4>Login Page</h4>
+      <form method="POST" autocomplete="off">
+        <label for="userName">Username: </label>
+        <input
+          type="text"
+          id="userName"
+          name="userName"
+          title="lower case alphabets with minimum 5 and maximum of 15 characters is allowed"
+          pattern="[a-z]{5,15}"
+          required
+          autofocus
+        />
+        <label for="password">Password: </label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          title="password should have atleast one lowercase, uppercase, number, and special character with minimum of 8 and maximum of 16 characters"
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-z0-9!@#$%^&*]{8,16}$"
+          required
+          autofocus
+        />
+        <input type="submit" value="Login" class="template-bg-color" />
+      </form>
+    </main>
+    <footer class="template-bg-color">
+      <p>&copy;2024, KEC.</p>
+    </footer>
+  </body>
+</html>
