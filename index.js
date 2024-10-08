@@ -28,7 +28,14 @@ function declare() {
   let phoneNumber; //undefined variable or type
   console.log("Phone: " + phoneNumber);
 
-  let student;
+  //object in javascript
+  let student = {
+    id: 1,
+    firstName: "Abc",
+    lastName: "Def",
+    age: 20,
+  };
+  console.log(student);
 }
 
 function print() {
