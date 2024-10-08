@@ -1,1 +1,12 @@
 https://github.com/psrsekhar/KEC
+
+Arithematic : +, -, *, /, %, ++, --
+Assignment  : =, +=, -=, *=, /=, %=
+Conditional : ==, ===, !=, !==, >, >=, <, <=
+Logical     : ||, &&, !
+Bitwise     : &, `(OR), ^(XOR), ~(NOT)
+Shift       : >>, <<
+Ternary     : ?:
+Type        : typeof
+Spread      : ...
+Concatenation : +

@@ -44,5 +44,20 @@ function print() {
   //console.log("in print() : " + actorName); //out of scope. will get an error.
 }
 
-declare();
-print();
+//declare();
+//print();
+
+let x = 10;
+let y = "10";
+console.log("== : " + (x == y));
+console.log("=== : " + (x === y));
+
+console.log("!= : " + (5 != "6"));
+console.log("!== : " + (5 !== "5"));
+console.log("true && false : " + (true && false));
+
+let age = 21;
+let isElegible = age >= 18 ? true : false;
+
+console.log(typeof age);
+console.log(typeof isElegible);
