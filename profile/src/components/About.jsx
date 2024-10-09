@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div className="row container-fluid bg-light p-2 m-2">
-      <h3 className="text-center">ABOUT ME</h3>
+      <h3 className="text-center text-success">ABOUT ME</h3>
       <div class="col-3 text-center">
         <img src="react.svg" className="rounded" width="100" height="100" />
       </div>
