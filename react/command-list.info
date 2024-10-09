@@ -1,0 +1,26 @@
+-----------------------------------------
+Setup the project
+-----------------------------------------
+npm create vite@latest cms --template react
+cd cms
+npm install
+
+-----------------------------------------
+Install dependecies
+-----------------------------------------
+npm install bootstrap react-router-dom axios json-server firebase
+
+-----------------------------------------
+Install Firebase CLI
+-----------------------------------------
+npm install -g firebase-tools
+
+-----------------------------------------
+Run the JSON Server
+-----------------------------------------
+npm run server
+
+-----------------------------------------
+Run the Application
+-----------------------------------------
+npm run dev
