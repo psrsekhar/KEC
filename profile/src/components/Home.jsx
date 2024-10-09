@@ -9,8 +9,11 @@ export default function Home() {
           I am a results-driven professional with over a decade of
           global-cross-industry experience, specializing in Microsoft Azure,
           AWS, GCP, IoT, DevOps, biometric integrations, and full-stack
-          development. My expertise lies in migrating, modernizing, securing,
-          and optimizing cloud environments, and I have a proven track record in
+          development.
+        </p>
+        <p className="lh-base text-justify">
+          My expertise lies in migrating, modernizing, securing, and optimizing
+          cloud environments, and I have a proven track record in
           enterprise-level application development and deployment in the cloud.
         </p>
       </div>
