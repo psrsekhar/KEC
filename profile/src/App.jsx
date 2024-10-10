@@ -6,6 +6,7 @@ import Projects from "./components/Projects.jsx";
 import Footer from "./components/Footer.jsx";
 import Contact from "./components/Contact.jsx";
 import Home from "./components/Home.jsx";
+import View from "./components/View.jsx";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/view" element={<View />} />
         </Routes>
       </Router>
       <Footer />

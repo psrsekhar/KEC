@@ -1,0 +1,22 @@
+{
+  "contacts": [
+    {
+      "id": "4f6e",
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "message": "Hi, how are you?"
+    },
+    {
+      "id": "731c",
+      "name": "Abc Def",
+      "email": "abc@def.com",
+      "message": "Hi, hope you are doing well."
+    },
+    {
+      "id": "75e5",
+      "name": "Sairam Sekhar P",
+      "email": "sai@def.com",
+      "message": "Hi, i am good. how about you?"
+    }
+  ]
+}

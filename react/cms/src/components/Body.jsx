@@ -1,12 +1,39 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
 import "./Body.css";
-import logo from "../assets/react.svg";
 
 export default function Body() {
+  const [users, setUsers] = useState([]);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchUsers = async () => {
+      try {
+        const response = await axios.get("https://kec-profile.web.app/users");
+        setUsers(response.data);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchUsers();
+  }, []);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error}</p>;
+
   return (
-    <main>
-      <p>Welcome! to Kongu Engineering College</p>
-      <img src="vite.svg" width="150" height="150" />
-      <img src={logo} width="150" height="150" />
-    </main>
+    <div className="container">
+      <h1>User List</h1>
+      <ul className="list-group">
+        {users.map((user) => (
+          <li key={user.id} className="list-group-item">
+            {user.name}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }

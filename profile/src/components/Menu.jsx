@@ -29,6 +29,11 @@ export default function Menu() {
                 Contact Me
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link text-white" to="/view">
+                Get Contacts
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

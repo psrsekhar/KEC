@@ -1,4 +1,5 @@
-import { useState } from "react";
+import axios from "axios";
+import React, { useState } from "react";
 
 export default function Contact() {
   const [contactFormData, setContactFormData] = useState({
@@ -6,27 +7,41 @@ export default function Contact() {
     email: "",
     message: "",
   });
+  const [responseData, setResponseData] = useState(null);
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
-    alert("Name: " + contactFormData.name);
+    try {
+      const apiResponse = await axios.post(
+        "http://localhost:1433/contacts",
+        contactFormData
+      );
+      setResponseData(apiResponse);
+    } catch (error) {
+      console.error("Error: " + error);
+      setResponseData(error);
+    }
     setContactFormData({ name: "", email: "", message: "" });
   }
 
   function handleChange(e) {
     setContactFormData({
       ...contactFormData,
-      [e.target.name]: [e.target.value],
+      [e.target.name]: e.target.value,
     });
+    setResponseData(null);
   }
 
   return (
     <div className="container-fluid p-2 m-2">
-      <div className="offset-4 col-3 card">
+      <div className="offset-5 col-3 card">
         <h5 className="card-header bg-success text-white text-center">
           Contact Me
         </h5>
         <div className="card-body">
+          <div className="col-12">
+            <p className="text-info text-justify"></p>
+          </div>
           <form autoComplete="off" onSubmit={handleSubmit}>
             <div className="mb-3">
               <label htmlFor="name" className="form-label">
@@ -73,8 +88,8 @@ export default function Contact() {
             </div>
             <input
               type="submit"
+              className="offset-4 col-3 p-2 btn btn-success"
               value="Send"
-              className="offset-4 btn btn-success"
             />
           </form>
         </div>
