@@ -1,3 +1,6 @@
+// https://unstop.com/blog/cognizant-genc-next-coding-questions
+// https://www.geeksforgeeks.org/dsa/cognizant-sde-sheet-interview-questions-and-answers/
+
 /**
  * write a program to print ASCII character from numbers.
  * Input: N -> number of elements, list of numbers
@@ -23,7 +26,7 @@
 
 /**
  * You are given an integer array A of length N. In array A, two integers are
- * repeated, meaning two integers * appear twice in the array. You need to
+ * repeated, meaning two integers appear twice in the array. You need to
  * transform the array into a valid permutation of integers from 1
  * to N using the following operation:
  * In each operation, you can choose any element of the array and increase its
@@ -31,23 +34,47 @@
  * 
  * Task:
  * Find and return an integer representing the minimum number of operations
- * required to convert the array * into a valid permutation of size N."
+ * required to convert the array into a valid permutation of size N."
  * 
  * Input1: 5 and Input2: [1,1,3,4,4]
  * Output: 2
  */
 
 /**
- * write a program to check whether a car number is lucky or not. If the sum of
- * its digits is divisible by 3, 5 or 7 then the number is considered as lucky.
- * Example: Input -> 1230 (4-digit number) and Output -> 1230 is lucky number
+ * Given an array of integers, count the number of contiguous subarrays
+ * (subarrays with consecutive elements) * where the sum of the first and last
+ * element of the subarray is equal to the middle element.
+ * For each test case:
+ * Input1: N for number of element and Input2: An integer array of size N
+ * 
+ * Find the number of such subarrays and return it as the output.
+ * 
+ * Example 1:
+ * Input1: 7 and Input2: {1, 5, 4, 3, 6, 3}
+ * Output: 2
+ */
+
+/**
+ * write a program to check whether a car number is lucky or not. If the sum of its digits is divisible by 3, 5 or 7 then the number is considered as lucky.
+ * Example: Input -> 1230 (4-digit number) and Output -> 1230 is a lucky number
+ */
+
+ /**
+ * Jack has been interested in numerology for a while and has learned how to calculate a lucky number for a given word using the rules below:
+ Each alphabet in the word has an ASCII value (where 'A' = 65, 'B' = 66, ...,'Z' = 90, 'a' = 97, etc.).
+ Each letter in the word is assigned a 1-based index (i.e., the first letter has index 1, the second letter has index 2, and so on).
+ The lucky number is calculated as follows:
+ Multiply each character's ASCII value by its 1-based index.
+ Include this product in the sum only if either the index or the ASCII value (or both) are odd.
+ * 
+ * Example: Input 1: 5 and Input 2: JAMES
+ * Output: 1126
  */
 
 /**
  * In a college, students from different departments get placed in companies.
  * The program takes department names and the number of placements from
- * different departments. write a program to print which department has the
- * highest placements.
+ * different departments. write a program to print which department has the highest placements.
  * Example: Input -> {"CSE", "ECE", "EEE", "ME", "MTE"} and {30, 20, 30, 10 20}
  * Output -> Highest Placements is in: {CSE:30},{EEE:30}
  */
@@ -107,14 +134,28 @@
  * 3. 2 steps + 1 step
  */
 
+
 /**
- * Jack has been interested in numerology for a while and has learned how to calculate a lucky number for a   * given word using the rules below:
- * Each alphabet in the word has an ASCII value (where 'A' = 65, 'B' = 66, ...,'Z' = 90, 'a' = 97, etc.).
- * Each letter in the word is assigned a 1-based index (i.e., the first letter has index 1, the second letter * index 2, and so on).
- * The lucky number is calculated as follows:
- * Multiply each character's ASCII value by its 1-based index.
- * Include this product in the sum only if either the index or the ASCII value (or both) are odd.
- * 
- * Example: Input 1: 5 and Input 2: JAMES
- * Output: 1126
+ * Rearrange characters in a string so that no two adjacent are same.
+ */
+
+/**
+ * Find duplicate elements in an array without using extra space.
+ */
+
+/**
+ * Given an integer N, print its binary representation without using in-built
+ * functions.
+ */
+
+/**
+ * Given an array, find the maximum product subarray.
+ */
+
+/**
+ * Write a program to check if two strings are rotations of each other.
+ */
+
+/**
+ * Find the missing number in an array of size n containing numbers 1 to n.
  */
